@@ -184,23 +184,23 @@
 							<li>
 								Buka file koneksi.php, ketik perintah 
 								<pre>
-								<?php
-									$conn = mysql_connect("localhost", "root", "");
-									mysql_select_db( "belajar" , $conn);
-									if (!$conn) {
-									   echo "Tidak dapat konek ke DB: " . mysql_error();
-									   exit;
-									}
-									if (!mysql_select_db("belajar")) {
-									   echo "Tidak dapat memilih database belajar : " . mysql_error();
-									   exit;
-									}
-									else
-									{
-										echo "Koneksi database belajar berhasil.";
-										exit;
-									}
-								?>
+									&lt;?php
+										$conn = mysql_connect(&quot;localhost&quot;, &quot;root&quot;, &quot;&quot;);
+										mysql_select_db( &quot;belajar&quot; , $conn);
+										if (!$conn) {
+										   echo &quot;Tidak dapat konek ke DB: &quot; . mysql_error();
+										   exit;
+										}
+										if (!mysql_select_db(&quot;belajar&quot;)) {
+										   echo &quot;Tidak dapat memilih database belajar : &quot; . mysql_error();
+										   exit;
+										}
+										else
+										{
+											echo &quot;Koneksi database belajar berhasil.&quot;;
+											exit;
+										}
+									?&gt;
 								</pre>
 							</li>
 							<li>
@@ -210,7 +210,7 @@
 								<img src="imgs/hasil.gif" class="img-thumbnail" />
 							</li>
 							<li>
-								Selesai
+								Referensi tutorial <a href="http://www.w3schools.com/php/php_mysql_intro.asp">mysql</a>
 							</li>
 						</ul>
 				  </div>
@@ -246,7 +246,7 @@
 		}
 		$.material.init();
    
-		/*var activeid="UA-62808390-1";
+		var activeid="UA-62808390-1";
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', activeid]);
 		_gaq.push(['_trackPageview']);
@@ -257,7 +257,7 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 		_gaq.push(['_trackPageview', window.location.pathname + window.location.search  + window.location.hash]);
-		*/
+	
 	</script>
   </body>
 </html>
